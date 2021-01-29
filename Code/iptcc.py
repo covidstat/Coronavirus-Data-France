@@ -1,7 +1,8 @@
 import math
 
 
-#Calcul de l'IPTCC en fonction de la température (en Celsius) et l'humidité relative (en %). Calcul développé par Predict Services
+#Calcul de l'IPTCC en fonction de la température (en Celsius) et l'humidité relative (en %). Calcul développé par Predict Services. Je ne suis pas affilié à cette société.
+#Lien vers le calcul: https://france3-regions.francetvinfo.fr/occitanie/herault/montpellier/covid-19-societe-predict-montpellier-propagation-du-virus-depend-meteo-1907934.html
 #Contact : Twitter : @covid_stat
 def IPTCC_calculation(Temperature, RelativeHumidity):
     AbsoluteHumidity = (6.112 * math.exp((17.67*Temperature)/(Temperature + 243.5)) * RelativeHumidity * 2.1674 )  / (273.15 + Temperature)
